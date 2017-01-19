@@ -1,5 +1,5 @@
 
-var lis = document.querySelectorAll("li");
+var allLis = document.querySelectorAll("li");
 var firstLI = document.querySelector("li");
 var secondLI = document.querySelectorAll("li")[1];
 var thirdLI = document.querySelectorAll("li")[2];
@@ -13,6 +13,21 @@ firstLI.addEventListener("mouseout", function(){
 	console.log("MOUSE OUT");
 	firstLI.classList.remove("hover");
 })
+
+for(var i = 0; i < allLis.length; i++){
+	allLis[i].addEventListener("mouseover", function(){
+		console.log("MOUSED OVER");
+		this.classList.add("hover");
+	});
+	allLis[i].addEventListener("mouseout", function(){
+		console.log("MOUSE OUT");
+		this.classList.remove("hover");
+	});
+	allLis[i].addEventListener("click", function(){
+		console.log("click");
+		this.classList.toggle("clicked");
+	});
+}
 
 
 

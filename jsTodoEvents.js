@@ -2,36 +2,22 @@
 var lis = document.querySelectorAll("li");
 
 for(var i = 0; i < lis.length; i++){
-	lis[i].addEventListener("click", function(){
-		lis[i]
-	} );
+	lis[i].addEventListener("click", clickListener(lis[i]));
 }
 
 function clickListener(item){
-	item.addEventListener("click", )
+	item.classList.add("click");
 }
 
 function doubleClick(item){
-	item.classList.add("");
+	item.classList.add("dooubleCliced");
 }
 
-// .hover{
-// 	color: #4286f4;
+function hoverOn(item){
+	item.classList.add("hover");
+}
 
-// }
+function clickedOn(item){
+	item.classList.add("clicked");
+}
 
-// .click{
-// 	color: #f442b9;
-
-// }
-
-// .clicked{
-// 	color: #e50d0d;
-// 	text-decoration: line-through;
-
-// }
-
-// .doubleClicked{
-// 	color: #afe50d;
-// 	text-decoration: line-through;
-// }

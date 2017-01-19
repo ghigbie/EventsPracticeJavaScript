@@ -1,4 +1,5 @@
 //this document was created in the command line
+alert('JS file connected');
 var lis = document.querySelectorAll("li");
 
 for(var i = 0; i < lis.length; i++){

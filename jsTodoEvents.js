@@ -3,10 +3,11 @@ alert('JS file connected');
 var lis = document.querySelectorAll("li");
 var firstLI = document.querySelector("li");
 var secondLI = document.querySelectorAll("li")[1];
-var thirdLI = document.querySelecctorALL("li")[2];
+var thirdLI = document.querySelecctorAll("li")[2];
 
 firstLI.addEventListener("mouseover", function(){
-
+	console.log("MOUSED OVER");
+	firstLI.classList.toggle("hover");
 });
 
 
@@ -28,5 +29,5 @@ firstLI.addEventListener("mouseover", function(){
 
 // function clickedOn(item){
 // 	item.classList.add("clicked");
-}
+//}
 

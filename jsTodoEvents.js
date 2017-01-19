@@ -1,14 +1,19 @@
-//this document was created in the command line
-alert('JS file connected');
+
 var lis = document.querySelectorAll("li");
 var firstLI = document.querySelector("li");
 var secondLI = document.querySelectorAll("li")[1];
-var thirdLI = document.querySelecctorAll("li")[2];
+var thirdLI = document.querySelectorAll("li")[2];
 
-firstLI.addEventListener("mouseover", function(){
+firstLI.addEventListener("mouseover", function(){ //this function will keep the change
 	console.log("MOUSED OVER");
-	firstLI.classList.toggle("hover");
+	firstLI.classList.add("hover"); 
 });
+
+firstLI.addEventListener("mouseout", function(){
+	console.log("MOUSE OUT");
+	firstLI.classList.remove("hover");
+})
+
 
 
 // for(var i = 0; i < lis.length; i++){

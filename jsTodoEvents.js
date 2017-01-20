@@ -27,6 +27,10 @@ for(var i = 0; i < allLis.length; i++){
 		console.log("click");
 		this.classList.toggle("clicked");
 	});
+	allLis[i].addEventListener("doubleClick" function(){
+		console.log("doubleClicked")
+		this.classList.toggle("doubleClicked");
+	});
 }
 
 
